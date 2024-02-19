@@ -1,0 +1,10364 @@
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/ViyarPro/dsp/limitations_pl/">
+      
+      
+        <link rel="prev" href="../limitations/">
+      
+      
+        <link rel="next" href="../limitations_ua/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Limitations pl - Viyar Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ograniczenia-produkcyjne" class="md-skip">
+          Перейти до змісту
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Хедер">
+    <a href="../../.." title="Viyar Documentation" class="md-header__button md-logo" aria-label="Viyar Documentation" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Viyar Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Limitations pl
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Пошук" placeholder="Пошук" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Шукати">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистити" aria-label="Очистити" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Пошук розпочато
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ViyarBazzar/" class="md-tabs__link">
+          
+  
+  ViyarBazzar
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  ViyarPro
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навігація" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Viyar Documentation" class="md-nav__button md-logo" aria-label="Viyar Documentation" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    Viyar Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ViyarBazzar
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            ViyarBazzar
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ViyarBazzar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    ViyarPro
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ViyarPro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Описание структуры конструкторов
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index-dev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index dev
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index-minsk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index minsk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Dev
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Dev
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Документация для разработчика
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Viyar modules
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Viyar modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/viyar-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Dsp
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Dsp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обработка ДСП/ДВП/МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clearing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clearing_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clearing_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clipping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clipping_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clipping_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corners/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corners_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corners_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cut/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cut
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cut_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cut pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cutting-visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cutting-visualization_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cutting-visualization_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-additives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-additives_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../detail-additives_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-addition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-addition_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-addition_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-import_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-import_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-list_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details-list_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../details_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drilling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drilling_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drilling_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edges_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edges_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-cherkassy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes cherkassy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-cherkassy_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes cherkassy pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-cherkassy_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes cherkassy ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-dp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes dp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-dp_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes dp pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-dp_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes dp ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kh_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kh pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kh_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kh ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kiev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kiev
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kiev_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kiev pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-kiev_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes kiev ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-lviv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes lviv
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-lviv_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes lviv pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-lviv_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes lviv ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-minsk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes minsk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-poltava/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes poltava
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-poltava_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes poltava pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-poltava_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes poltava ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-rovno/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes rovno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-rovno_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes rovno pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-rovno_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes rovno ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-vinn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes vinn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-vinn_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes vinn pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-vinn_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes vinn ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-zhit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes zhit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-zhit_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes zhit pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../furn-for-holes-zhit_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Furn for holes zhit ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grooving/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grooving
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grooving_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grooving pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grooving_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grooving ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import-export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import-export_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import-export_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obróbka płyty wiórowej/płyty pilśniowej/MDF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обробка ДСП/ДВП/МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limitations-minsk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations minsk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limitations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Limitations pl
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Limitations pl
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ograniczenia-produkcyjne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ograniczenia produkcyjne
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ograniczenia produkcyjne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ciecie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cięcie.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dod-usugi-ciecia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dod. usługi cięcia:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#klejenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Klejenie
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wiercenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiercenie
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rowek" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rowek
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cwierc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ćwierć
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obrobki-katowe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obróbki kątowe.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyciecie-wedug-szablonu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wycięcie według szablonu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#w-tym-rozdziale-ograniczenia-minmax-podane-sa-w-wymiarach-piowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      W tym rozdziale ograniczenia min/max podane są w wymiarach PIŁOWANIA!
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limitations_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations-list_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operations-list_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problems_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problems_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rabbeting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rabbeting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rabbeting_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rabbeting pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rabbeting_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rabbeting ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes-by-pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes-by-pattern_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes-by-pattern_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shapes_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Editor
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            Editor
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Live (GitHub-Flavored) Markdown Editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Fasad mdf
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Fasad mdf
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Фасады МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fronty MDF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Фасади МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news-pln/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pln
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.10_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.10 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.10_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.10 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.11_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.11 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.1_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.1_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.2_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.2_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.3_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.3_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.4_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.4_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.5_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.5_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.6_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.6_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.7_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.7_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.8_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.8_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.9_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news.9_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fasad-mdf/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Folding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            Folding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Складные системы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemy składane
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Складні системи
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.1_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.1_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.2_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.2_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.3_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.3_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.4_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.4_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.5_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.5_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.6_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news.6_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news7_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news7_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../folding/section-not-exist_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Frame facade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            Frame facade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Фасады МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fronty MDF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Фасади МДФ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.10_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.10 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.1_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.1_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.2_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.2_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.3_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.3_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.4_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.4_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.5_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.5_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.6_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.6_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.7_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.7_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.7 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.8_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.8_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.8 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.9_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news.9_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.9 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frame-facade/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sliding systems
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            Sliding systems
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Раздвижные системы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Розсувні системи
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems/news_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sliding systems new
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            Sliding systems new
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Раздвижные системы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Розсувні системи
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.1_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.1_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.2_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.2_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.3_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.3_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.4_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.4_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.5_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.5_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.6_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news.6_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news7_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news7_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sliding-systems-new/section-not-exist_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_16" id="__nav_3_16_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Steklo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_16">
+            <span class="md-nav__icon md-icon"></span>
+            Steklo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обработка стекла/зеркала
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/clearing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/clearing_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/clearing_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/cost_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/cost_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/detail-additives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/detail-additives_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/detail-additives_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-addition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-addition_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-addition_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-import_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-import_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-list_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details-list_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/details_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/drilling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/drilling_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/drilling_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drilling ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/edges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/edges_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/edges_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/import-export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/import-export_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/import-export_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obróbka szkła/lustra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обробка скла/дзеркала
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/intro_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/intro_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/limitations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/limitations_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/limitations_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/material_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/material_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/news_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/operations-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/operations-list_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/operations-list_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations list ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/order_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/order_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/problems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/problems_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/problems_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/settings_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../steklo/settings_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_17" id="__nav_3_17_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Stol
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_17">
+            <span class="md-nav__icon md-icon"></span>
+            Stol
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обработка столешниц
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clearing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clearing_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clearing_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clearing ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clipping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clipping_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/clipping_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clipping ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/corners/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/corners_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/corners_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corners ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cost_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cost_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cutting-visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cutting-visualization_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/cutting-visualization_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cutting visualization ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/detail-additives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/detail-additives_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/detail-additives_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detail additives ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-addition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-addition_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-addition_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details addition ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-import_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-import_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details import ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-list_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-list_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details list ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details-pln/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details pln
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/details_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Details ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/edges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/edges_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/edges_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edges ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/import-export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/import-export_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/import-export_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import export ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obróbka blatów
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Обробка стільниць
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/limitations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/limitations_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/limitations_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limitations ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/material_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/material_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/news_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/order_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/order_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/problems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/problems_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/problems_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Problems ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/settings_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/settings_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/shapes-by-pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/shapes-by-pattern_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stol/shapes-by-pattern_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shapes by pattern ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_18" id="__nav_3_18_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Swinging
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_18">
+            <span class="md-nav__icon md-icon"></span>
+            Swinging
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Распашные системы
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/index_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemy uchylne
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/index_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Орні системи
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.1_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.1_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.1 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.2_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.2_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.2 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.3_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.3_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.3 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.4_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.4_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.4 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.5_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.5_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.5 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.6_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news.6_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News.6 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news7_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news7_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News7 ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/news_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    News pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/section-not-exist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/section-not-exist_pl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist pl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swinging/section-not-exist_ua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section not exist ua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_19" id="__nav_3_19_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Viyar modules
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_19">
+            <span class="md-nav__icon md-icon"></span>
+            Viyar modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viyar-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Конструктор модульных систем
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viyar-modules/construction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Construction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viyar-modules/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../viyar-modules/modes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Limitations pl</h1>
+
+<p><a href="/service/doc/?cid=dsp">Do spisu treści</a></p>
+<h2 id="ograniczenia-produkcyjne">Ograniczenia produkcyjne</h2>
+<p><a name="detail-size-porezka"/></p>
+<h3 id="ciecie">Cięcie.</h3>
+<blockquote>
+<p><strong>Usługi cięcia:</strong> </p>
+<ol>
+<li><b>Wykonywane na stacji piłowania. Grubość piły 5,5 mm</b><ol>
+<li><b>Minimalne dopuszczalne rozmiary:</b></li>
+</ol>
+</li>
+<li>100x50x1,5mm lub 50x100x1,5mm<ol>
+<li><b>Maksymalne dopuszczalne rozmiary:</b></li>
+</ol>
+</li>
+<li>Maksymalny rozmiar części zależy od rozmiarów materiału wyjściowego (2800), grubości narzędzia skrawającego (5,5) , odpiłowania materiału (10) i fugi (0,5 - 1(w zależności od wybranego materiału))
+   ( 2800 - 10 - 10 - 5,5 - 5,5 - 0,5 - 0,5 = 2768 mm ) .<ol>
+<li><b>Odpiłowanie (P/L/W/Z):</b></li>
+</ol>
+</li>
+<li>Kronospan, NIEMANN = 10/10/10/10mm</li>
+<li>Płyta pilśniowa, sklejka, panele ścienne = 5/5/5/5mm</li>
+<li>Płyta wiórowa = 10/5/10/5mm</li>
+<li>Blaty = 0/20/0/0mm</li>
+</ol>
+</blockquote>
+<p><a name="detail-size-srez"/></p>
+<h3 id="dod-usugi-ciecia">Dod. usługi cięcia:</h3>
+<blockquote>
+<p><strong>Cięcie czoła:</strong> </p>
+<ol>
+<li><b>Wykonywane na maszynie do rozkroju płyt. Grubość piły 3,2 mm</b><ol>
+<li><b>Minimalne dopuszczalne rozmiary:</b></li>
+</ol>
+</li>
+<li>do cięcia pod kątem do 45 stopni czoła części na długim boku - 200x70x6 mm</li>
+<li>do cięcia pod kątem do 45 stopni czoła części na krótkim boku - 200x50x6 mm</li>
+<li>do cięcia pod kątem do 45 stopni czoła części wzdłuż obwodu - 200x100x6 mm<ol>
+<li><b>Maksymalne dopuszczalne rozmiary:</b></li>
+</ol>
+</li>
+<li>do cięcia pod kątem do 45 stopni czoła części 3000x3000x45 mm<ol>
+<li><b>Do cięcia maksymalny kąt nachylenia piły 45*. Określenie stopnia wielokrotne 1mm</b></li>
+<li><b>Cięcia nie są obrzeżowane</b></li>
+<li><b>Cięcie można wykonać z obu boków - przód/tył</b></li>
+<li><b>Cięcie nie może być nie na pełną długość części</b></li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<p><a name="detail-size-podrezka"/></p>
+<blockquote>
+<p><strong>Przycinanie do rozmiaru:</strong> </p>
+<ol>
+<li><b>Wykonywane na maszynie do rozkroju płyt. Grubość piły 3,2 mm</b><ol>
+<li><b>Usługa jest wykonywana, gdy część wymaga docięcia do żądanego rozmiaru:</b></li>
+</ol>
+</li>
+<li>Jeśli wymagana jest część węższa niż 50 mm, na przykład 30, zwiększ ją do 100 mm". Krawędź części, którą operator cięcia trzyma palcami, musi mieć co najmniej 70 mm.<ol>
+<li><b>Minimalna część po przycinaniu 25x25 mm</b></li>
+<li><b>Minimalny dopuszczalny rozmiar części do klejenia 25x150 mm (z obrzeżem o grubości do 0,6 mm (włącznie))</b><br>
+   <b>Do obrzeża o grubości 0,8 mm - minimalna część 50x170 mm (tylko klejenie proste)</b><br>
+   <b>Minimalny dopuszczalny rozmiar części do klejenia 50x200 mm (z obrzeżem o grubości od 1 mm)</b></li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<p><a name="detail-size-podrezka"/></p>
+<blockquote>
+<p><strong>Łączenie:</strong> </p>
+<pre><code>1. &lt;b&gt;Minimalna grubość połączonej części 16 mm&lt;/b&gt;
+2. &lt;b&gt;Minimalny rozmiar części bez klejenia 100x70 mm&lt;/b&gt;
+2. &lt;b&gt;Maksymalna grubość połączonej części 60 mm lub 3 warstwy&lt;/b&gt;
+3. &lt;b&gt;Maksymalna dopuszczalna powierzchnia części z kilku warstw 3 m&lt;sup&gt;2&lt;/sup&gt;&lt;/b&gt;
+3. &lt;b&gt;Części są łączone za pomocą dwuskładnikowego kleju&lt;/b&gt;
+4. &lt;b&gt;Na mapie cięcia prefabrykaty będą miały naddatek 10 mm z każdej strony&lt;/b&gt;
+5. &lt;b&gt;Łączenie nie jest dostępne dla materiałów: płyta pilśniowa, OSB, płyta wiórowa i MDF szlifowane&lt;/b&gt;
+</code></pre>
+</blockquote>
+<p><a name="detail-size-pokleyka"/></p>
+<h3 id="klejenie">Klejenie</h3>
+<blockquote>
+<p><strong>Prostoliniowe oklejanie obrzeżem:</strong> </p>
+<ol>
+<li><b>Maksymalny rozmiar części</b> = "Rozmiar arkuszu" - "Odpiłowanie" - "Przebieg piły" - "Fugowanie"</li>
+<li><b>Minimalne rozmiary części:</b><ul>
+<li>Minimalna grubość części do obrzeżowania 8 mm</li>
+<li>Minimalna grubość części do obrzeżowania obrzeżem laserowym 16 mm</li>
+<li>Obrzeżem o grubości do 0,8 mm (włącznie) wzdłuż obwodu - 50x170 mm lub 100x100 mm</li>
+<li>Obrzeżem o grubości od 1 mm - 60x170 mm do klejenia wzdłuż obwodu lub 100x100 mm</li>
+</ul>
+</li>
+<li><b>Minimalna szerokość obrzeża</b> = "Grubość materiału" + 3 mm</li>
+<li><b>Do zamykania rowka:</b><ul>
+<li>Szerokość rowka do 7 mm (włącznie)</li>
+</ul>
+</li>
+<li><b>Do zamykania ćwierci:</b><ul>
+<li>Szerokość ćwierci do 6 mm (włącznie)</li>
+<li>Maksymalna głębokość z minimalną resztą korpusu 5 mm</li>
+</ul>
+</li>
+<li><b> Maksymalne dopuszczalne rozmiary:</b><ul>
+<li>Maksymalna dopuszczalna długość części do klejenia wzdłuż obwodu 4000 mm.</li>
+</ul>
+</li>
+<li><b> Minimalna grubość części do prostoliniowego oklejania obrzeżem:</b><ul>
+<li>Klej PUR - 8 mm</li>
+<li>Klej EVA - 10 mm</li>
+<li>Laserowe - 16 mm</li>
+</ul>
+</li>
+</ol>
+<p><strong>Obrzeżowanie łączeń PCV:</strong></p>
+<ol>
+<li><b>Minimalny rozmiar</b> = 200 x 100 mm</li>
+<li><b>Maksymalny rozmiar</b> = 3 mkw.</li>
+<li><b>Minimalna grubość połączonej części</b> = 16 mm</li>
+<li><b>Maksymalna grubość połączonej części</b> = 60 mm (3 warstwy)</li>
+<li><b>Przy wykonaniu łączenia od 2 mkw. nie tniemy ich po sklejeniu na części.</li>
+</ol>
+<p><strong>Krzywoliniowe oklejanie obrzeżem:</strong></p>
+<p><b>Za krzywoliniowe uważa się również obrzeżowanie boków przylegającą do kąta nieprostego (innego niż 90*)</b>.</p>
+<p><strong>Obrzeżowanie rogów/promieni:</strong></p>
+<ol>
+<li><b>Do klejenia obrzeżem o grubości 0,4-0,6 mm (włącznie):</b></li>
+<li>Minimalny dopuszczalny rozmiar części 30x150 mm</li>
+<li>Minimalna zewnętrzna R-10 mm</li>
+<li>Przecięcie w kształcie litery L - 20x20 mm<ol>
+<li><b>Do klejenia obrzeżem o grubości 0,8 mm:</b></li>
+</ol>
+</li>
+<li>Minimalny dopuszczalny rozmiar części 30x150 mm</li>
+<li>Minimalna zewnętrzna R-20 mm</li>
+<li>Przecięcie w kształcie litery L - 20x20 mm<ol>
+<li><b>Do klejenia obrzeżem o grubości od 1 mm:</b></li>
+</ol>
+</li>
+<li>Minimalny dopuszczalny rozmiar części 50x150 mm</li>
+<li>Minimalna zewnętrzna R-70 mm</li>
+<li>Minimalny odcinek prosty po R-100 i poniżej = 100 mm</li>
+<li>Minimalny rozmiar przecięcia w kształcie litery L 50x50 mm<ol>
+<li><b>Klejenie obrzeża do zamykania rowka:</b></li>
+</ol>
+</li>
+<li>Szerokość rowka większa niż 7 mm</li>
+</ol>
+<p><strong>Obrzeżowanie rogów/promieni łączeń:</strong></p>
+<pre><code>1. &lt;b&gt;Minimalna grubość połączonej części 16 mm&lt;/b&gt;
+2. &lt;b&gt;Maksymalna grubość połączonej części 60 mm&lt;/b&gt;
+3. &lt;b&gt;Do klejenia obrzeżem o grubości 0,4 - 0,6 mm (włącznie):&lt;/b&gt;
+</code></pre>
+<ul>
+<li>Minimalny dopuszczalny rozmiar części 30x150 mm</li>
+<li>Minimalna R-10</li>
+<li>Przecięcie w kształcie litery L - 20x20 mm<ol>
+<li><b>Do klejenia obrzeżem o grubości 0,8 mm:</b></li>
+</ol>
+</li>
+<li>Minimalny dopuszczalny rozmiar części 30x150 mm</li>
+<li>Minimalna R-30<ol>
+<li><b>Do klejenia obrzeżem o grubości 1 mm:</b></li>
+</ol>
+</li>
+<li>Minimalny dopuszczalny rozmiar części 50x150 mm</li>
+<li>Minimalna R-70 mm (dla części o grubości do 31 mm)</li>
+<li>Minimalna R-80 mm (dla części o grubości od 32 mm)</li>
+<li>Minimalny rozmiar przecięcia w kształcie litery L 50x50 mm<ol>
+<li><b>Klejenie obrzeża do zamykania rowka:</b></li>
+</ol>
+</li>
+<li>Szerokość rowka większa niż 7 mm</li>
+</ul>
+<p><strong>Obrzeżowanie ręczne (wycięcia/okna)</strong></p>
+<ol>
+<li><b>Do klejenia obrzeżem o grubości do 0,6 mm (włącznie):</b>
+Minimalne rozmiary wycięcia w kształcie litery U:</li>
+<li>30x10 o maksymalnej głębokości 50 mm</li>
+<li>50x10 o maksymalnej głębokości 200 mm</li>
+<li>100x10 mm o maksymalnej głębokości 400 mm</li>
+<li>300x10 mm o głębokości większej niż 400 mm</li>
+<li><b>Do klejenia obrzeżem o grubości do 0,6 mm (włącznie):</b></li>
+<li>Minimalna R-10 mm</li>
+<li>Minimalny rozmiar wycięcia w kształcie litery U 100x10 mm</li>
+<li>Minimalny rozmiar wycięcia okna 150x150 mm</li>
+<li>Minimalny rozmiar koła R-100 mm</li>
+<li>b&gt;Do klejenia obrzeżem o grubości 0,8 mm (włącznie):</b></li>
+<li>Minimalna R-20 mm</li>
+<li>Minimalny rozmiar wycięcia w kształcie litery U 200x10 mm przy maksymalnej głębokości do 400 mm lub 300x10 przy głębokości powyżej 400 mm</li>
+<li>Minimalny rozmiar wycięcia okna 200x200mm lub R-100mm</li>
+<li><b>Do klejenia obrzeżem o grubości od 1 mm:</b></li>
+<li>Minimalny rozmiar wycięcia w kształcie litery U 200x50 mm</li>
+<li>NIEDOPUSZCZALNE jest oklejanie wycięcia w kształcie litery U z promieniami (bez dod. obróbki pod 90*)</li>
+<li>NIEDOPUSZCZALNE jest oklejanie boków wewnętrznych wycięcia okna obrzeżem o grubości od 1 mm</li>
+<li><b>Wycięcie w kształcie litery U:</b></li>
+<li>Głębokość do 400 mm, szerokość - co najmniej 200 mm</li>
+<li>Głębokość od 401 mm, szerokość - co najmniej 300 mm</li>
+</ol>
+<p><strong>Obrzeżowanie łączeń ręczne (wycięcia/okna)</strong></p>
+<ol>
+<li><b>Minimalna grubość połączonej części 16 mm</b></li>
+<li><b>Maksymalna grubość połączonej części 60 mm</b></li>
+<li><b>Do klejenia obrzeżem o grubości do 0,8 mm (włącznie):</b></li>
+<li>Minimalny rozmiar części - 30x150 mm</li>
+<li>Minimalna R-80 mm</li>
+<li>Minimalny rozmiar wycięcia w kształcie litery U 200x10 mm</li>
+<li>Minimalny rozmiar wycięcia okna 200x200 lub R-100 mm</li>
+<li>Boki wewnętrzne wycięcia okna mogą być obrzeżowane TYLKO obrzeżem o grubości do 0,8 mm (włącznie)</li>
+<li><b>Do klejenia obrzeżem o grubości od 1 mm:</b></li>
+<li>Minimalny rozmiar części 50x150 mm</li>
+<li>Minimalny rozmiar wycięcia w kształcie litery U 200x50 mm</li>
+<li>NIEDOPUSZCZALNE jest oklejanie wycięcia w kształcie litery U z promieniami (bez dod. obróbki pod 90*)</li>
+<li>NIEDOPUSZCZALNE jest oklejanie boków wewnętrznych wycięcia okna obrzeżem o grubości od 1 mm </li>
+<li><b>Wycięcie w kształcie litery U:</b></li>
+<li>Głębokość do 400 mm, szerokość - co najmniej 200 mm</li>
+<li>Głębokość od 401 mm, szerokość - nie mniej niż 300 mm</li>
+</ol>
+</blockquote>
+<p><a name="drilling-operations-limits"/></p>
+<h3 id="wiercenie">Wiercenie</h3>
+<blockquote>
+<ol>
+<li><b>Ograniczenia dotyczące rozmiaru części:</b></li>
+<li>długość 200-3000 mm</li>
+<li>szerokość 70-850 mm</li>
+<li><b>Ograniczenia dotyczące grubości części:</b></li>
+<li>12-60mm</li>
+<li><b>Możliwe średnice otworów:</b></li>
+<li>Otwory ŚLEPE - 2 mm, 5 mm, 6 mm, 8 mm, 10 mm, 12 mm, 15 mm, 18 mm, 20 mm, 25 mm, 26 mm, 30 mm, 35 mm</li>
+<li>Otwory PRZELOTOWE - 4 mm, 5 mm, 7 mm, 7 mm (z pogłębiaczem), 8 mm, 10 mm</li>
+<li>Otwory CZOŁOWE - 4,5 mm; 5mm; 6 mm; 8 mm; 8,5 mm; 10 mm; 11 mm; 12 mm; 13 mm; 14 mm</li>
+<li><b>Maksymalna głębokość otworów:</b></li>
+<li>na czołach wynosi 34 mm</li>
+<li>na płaszczyznach przelotowego 30 mm</li>
+<li>na płaszczyznach głębokość otworu ślepego nie może być większa niż grubość materiału - (minus) 3 mm, np. w płycie wiórowej o grubości 18 mm nie można wiercić otworu ŚLEPEGO głębszego niż 15 mm</li>
+<li>faktyczna głębokość otworu ślepego będzie mniejsza od maksymalnej głębokości wiercenia o 1 mm (z wyjątkiem średnicy 2 mm - max głębokość 5 mm).</li>
+<li><b>Wcięcia od krawędzi części do początku otworu NA PLASZCZYŹNIE:</b></li>
+<li>dla średnic: 2/4/5/6/7/8/10 mm = 4 mm z każdego boku</li>
+<li>dla średnic: 15/18/20 mm:
+z 1 boku = dowolny minus / zero / plus od 4 mm
+z 2 boków = 4 mm</li>
+<li>dla średnic: 25/26/30/35 mm:
+z 1 boku = dowolny minus (nie można zejść do zera) / plus od 4 mm
+z 2 boków = 4 mm</li>
+<li><b>Wcięcia do otworu NA CZOLE:</b>
+od płaszczyzny:</li>
+<li>minimalnie - na czole z obrzeżem = 2 mm/bez obrzeża = 3 mm (przed początkiem)</li>
+<li>maksymalnie - 27 mm (do środka)<br>
+od rogu = 18 mm (do środka)</li>
+<li><b>Wcięcie między krawędziami wierceń:</b>
+= 3 mm</li>
+<li>przy 35 średnicy w zestawie z 8/10 po przekątnej = 2 mm</li>
+<li>dla średnicy 35 mm bez ograniczeń</li>
+<li><b>Wymiary gabarytowe części dla średnic (10, 12, 14mm) - o głębokości od 35 do 70 mm:</b></li>
+<li>Do: 1100x1100mm - z uwzględnieniem obrotu części o 0-90-180-270° (usługa: 98175)</li>
+<li>Od: 1100x1100mm do 2500x1100mm - wiercenie na jednym lub dwóch dłuższych bokach (dwie usługi: 98175, 86209)</li>
+<li>Od: 2501x1101 mm (usługa: 86209)</li>
+<li><b>Do materiału „Sklejka” otwory przelotowe nie są dostępne.</b></li>
+<li><b>Dla grubości płyty wiórowej 16 mm, 18 mm istnieje możliwość wykonania otworu "7 mm pod konfirmat (z pogłębiaczem)</b></li>
+</ol>
+<p><a name="grooving-operations-limits"/></p>
+</blockquote>
+<h3 id="rowek">Rowek</h3>
+<blockquote>
+<p><strong>Rowek na płaszczyźnie</strong>:</p>
+<ol>
+<li>
+<p><b>Minimalny dopuszczalny rozmiar części (tylko na dłuższym boku) 200x70 mm</b></p>
+</li>
+<li>
+<p>tylko na dłuższym boku - 200x70 mm</p>
+</li>
+<li>z minimalną resztą korpusu - 30 mm (do uchwycenia części)</li>
+<li>na innych bokach - wtedy co najmniej 200x200 mm, 130x300 lub 80x360 mm</li>
+<li><b>Maksymalny dopuszczalny rozmiar części 3000x3000 mm</b></li>
+<li><b>Maksymalna głębokość rowka, powinna wynosić nie więcej połowy grubości materiału + 1 mm</b></li>
+<li><b>Minimalne wcięcie od krawędzi części do początku rowka 6 mm (bez obrzeża)</b></li>
+<li>Jeśli wymagany jest rowek zamknięty obrzeżem, wtedy obrzeżować czoło, na którym się znajduje, można tylko z wcięciem 8 mm (bez obrzeża)</li>
+<li><b>Jeśli rowek ma szerokość od 8 mm (włącznie) i aktywne jest pole wyboru „Zamknij obrzeżem”, to na czołach, na których zostanie zaklejone wyjście piły, zostanie zastosowany klej „Standard”.</li>
+<li><b>Jeśli rowek i ćwierć są pełne lub niepełne, umieszczone wzdłuż tych samych współrzędnych z przodu iz tyłu, reszta korpusu ma 7 mm</b></li>
+</ol>
+<p><strong>Rowek w czole (na pełną długość)</strong>:</p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części 70x400x16 mm</b></li>
+<li><b>Maksymalny dopuszczalny rozmiar części 2800x1000x60 mm</b></li>
+<li><b>Minimalna szerokość rowka 2,5 mm</b></li>
+<li><b>Maksymalna szerokość rowka 8 mm</b></li>
+<li><b>Wcięcie na czole od przodu lub tyłu do początku rowka 5 mm</b></li>
+<li><b>Minimalna długość rowka nie na pełną długość części 100 mm</b></li>
+<li><b>Maksymalna głębokość rowka w czole 18 mm</b></li>
+</ol>
+<p><strong>Rowek na płaszczyźnie (nie na pełną długość)</strong>:</p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części 80x360x8 mm</b></li>
+<li><b>Maksymalny dopuszczalny rozmiar części 3000x3000x60 mm</b></li>
+<li><b>Minimalne wcięcie od krawędzi części do początku rowka 6 mm (z wyłączeniem grubości obrzeża)</b></li>
+<li><b>NIEMOŻLIWE jest wykonanie rowka o szerokości 3,2 - 5,9 mm przy długości rowka od 10 do 119 mm (włącznie)</b></li>
+<li><b>Rowek o szerokości do 5,9 mm - maksymalna głębokość rowka, powinna wynosić nie więcej połowy grubości materiału + 1 mm</b></li>
+<li><b>Rowek o szerokości od 6 mm (włącznie) - maksymalna głębokość rowka - "reszta korpusu 5 mm".</b></li>
+</ol>
+<p><strong>Frezowanie czołowe</strong>:</p>
+<ol>
+<li><b>Minimalna część - podobnie jak SFR: 80x360 mm (dla materiałów o grubości od 16 mm do 19 mm i obróbki dostępne są tylko na jednej płaszczyźnie), 130x300 mm lub 200x200 mm;</b></li>
+<li><b>Minimalna grubość części 16 mm;</b></li>
+<li><b>Minimalne wcięcie do rowka od góry/od dołu 1,5 mm / 3 mm (jeśli z jednego boku od 1,5 do 3 mm, to wymagane jest 3 mm z drugiego);</b></li>
+<li><b>Minimalne wcięcie do rowka po lewej/prawej stronie 10 mm;</b></li>
+<li><b>Minimalna długość/szerokość rowka 10 mm;</b></li>
+<li><b>Maksymalna długość rowka 120 mm;</b></li>
+<li><b>Minimalna głębokość 1 mm;</b></li>
+<li><b>Maksymalna głębokość 70 mm;</b></li>
+<li><b>Minimalny promień 5 mm;</b></li>
+<li><b>Rozmiar frezu 8 mm;</b></li>
+<li><b>Dokończenie pod 90 stopni - niemożliwe.</b></li>
+</ol>
+</blockquote>
+<p><a name="rabbeting-operations-limits"/></p>
+<h3 id="cwierc">Ćwierć</h3>
+<blockquote>
+<p><strong>Wybór ćwierci (na pełną długość)</strong></p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części 200x70 mm</b></li>
+<li><b>Maksymalny dopuszczalny rozmiar części 3000x3000 mm</b></li>
+<li><b>Głębokość ćwierci może być większa niż połowa grubości materiału, ale z pozostałością co najmniej 5 mm</b></li>
+<li><b>Całkowita maksymalna głębokość ćwierci 20 mm</b></li>
+<li><b>Minimalna szerokość ćwierci 1 mm</b></li>
+<li><b>Maksymalna szerokość ćwierci jest równa jej długości</b></li>
+<li><b>Prostoliniowe oklejanie obrzeżem do zamykania ćwierci:</b></li>
+<li>Szerokość ćwierci do 6 mm (włącznie)</li>
+<li>Maksymalna głębokość z minimalną resztą korpusu 5 mm</li>
+</ol>
+<p><strong>Wybór ćwierci (nie na pełną długość)</strong></p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części 360x80 mm</b></li>
+</ol>
+</blockquote>
+<p><a name="corner-operations-limits"/></p>
+<h3 id="obrobki-katowe">Obróbki kątowe.</h3>
+<p><a name="corner-radius-size-limits"/></p>
+<blockquote>
+<p><strong>Obróbka "Promień"</strong></p>
+<ol>
+<li><b>Minimalna R-10mm</b></li>
+<li><b>Minimalny dopuszczalny rozmiar części:</b></li>
+<li>Dla grubości 8 mm - 19 mm - 80x360 mm (obróbki dostępne są tylko na jednej płaszczyźnie)</li>
+<li>Dla dowolnej grubości materiału - 200x200 mm (przy założeniu promienia ⩽ 170 mm) lub 130x300 mm (przy założeniu promienia ⩽ 130 mm)</li>
+<li><b>Minimalne dopuszczalne rozmiary promienia do obrzeżowania:</b></li>
+<li>Z oklejaniem obrzeżem o grubości do 0,8 mm - 10 mm</li>
+<li>Z oklejaniem obrzeżem o dowolnej grubości - 70 mm</li>
+<li>Z oklejaniem obrzeżem o dowolnej grubości części z kilku warstw - 80 mm</li>
+</ol>
+</blockquote>
+<p><a name="corner-cut-size-limits"/></p>
+<blockquote>
+<p><strong>Obróbka "Róg"</strong></p>
+<ol>
+<li><b>Maksymalny rozmiar części 3000x3000 mm</b></li>
+<li><b>Minimalne rozmiary części:</b></li>
+<li>Pod warunkiem obecności jednego rogu na części 100x200 mm</li>
+<li>Pod warunkiem obecności dwóch lub więcej rogów na części 100 x 300 mm</li>
+<li><b>Minimalny dopuszczalny rozmiar rogu ściętego:</b></li>
+<li>Bez oklejania obrzeżem - 5x5 mm</li>
+<li>Do oklejania obrzeżem (o dowolnej grubości) 30x30 mm</li>
+<li><b>Minimalny krok przesunięcia 1 mm</b></li>
+</ol>
+</blockquote>
+<p><a name="corner-cutout-size-limits"/></p>
+<blockquote>
+<p><strong>Obróbka "Wycinanie"</strong></p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części:</b></li>
+<li>Dla grubości 8 mm - 19 mm - 80x360 mm</li>
+<li>Dla dowolnej grubości materiału - 200x200 mm lub 120x300 mm</li>
+<li>Minimalna dopuszczalna wartość wycinania:
+    &gt; - 10x3 mm - dla grubości do 19 mm
+    &gt; - 20x20 mm - dla dowolnej grubości</li>
+<li><b>Minimalne rozmiary pozostałości części do wycięcia:</b></li>
+<li>Reszta korpusu musi mieć co najmniej 80x300 mm (włącznie)</li>
+<li><b>Obróbka promienia wewnętrznego:</b></li>
+<li>Wielkość promienia do ustawienia może być =&gt; głębokości wycięcia (Przykład: głębokość wycięcia 4 mm - promień 3 mm lub 4 mm)</li>
+<li>Minimalny promień 3 mm - do grubości materiału do 19 mm (włącznie)</li>
+<li>Minimalny promień 4 mm - do grubości materiału od 19 do 20 mm (włącznie)</li>
+<li>Minimalny promień 10 mm do grubości od 20 mm</li>
+</ol>
+</blockquote>
+<h3 id="wyciecie-wedug-szablonu">Wycięcie według szablonu</h3>
+<blockquote>
+<p><strong>Obróbka "Wycięcie w kształcie litery U"</strong></p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części:</b></li>
+<li>Dla grubości 8 mm - 19 mm - 85x300 mm (pod warunkiem zachowania rozmiarów do mocowania na maszynie 130x80 mm)</li>
+<li>Dla dowolnej grubości materiału - 200x200 mm lub 120x300 mm</li>
+<li><b>Rozmiary wycięcia w kształcie litery U:</b></li>
+<li>Minimalny rozmiar bez dod. obróbki cięcia frez. 15x3 mm (o promieniu 3 mm)(do grubości do 19 mm)</li>
+<li>Minimalny rozmiar bez dod. obróbki cięcia frez. 21x11 mm (dla dowolnej grubości)</li>
+<li>Minimalny rozmiar z dod. obróbką cięcia frez. 100x10 mm</li>
+<li><b>Minimalne rozmiary wcięć do wycięcia w kształcie litery U:</b></li>
+<li>Wycięcie o głębokości do 150 mm - minimalne wcięcia po bokach wycięcia 20x20 mm, w głębokości pozostałość 80 mm.</li>
+<li>Wycięcie o głębokości od 151 mm - minimalne wcięcia 80x80x80</li>
+<li>Maksymalna głębokość wycięcia w kształcie litery U 1250 mm</li>
+</ol>
+<p><strong>Obróbka "Wycięcie prostokątne/Koło/Łuk"</strong></p>
+<ol>
+<li><b>Minimalny dopuszczalny rozmiar części:</b></li>
+<li>Dla grubości 8 mm - 19 mm - 85x300 mm (pod warunkiem zachowania rozmiarów do mocowania na maszynie 130x80 mm)</li>
+<li>Dla dowolnej grubości materiału - 200x200 mm lub 120x300 mm</li>
+<li><b>Minimalny rozmiar wycięć:</b></li>
+<li>Wycięcie prostokątne bez dod. obróbki cięcia frez. - 20x20 mm (dla grubości do 19 mm włącznie) / 35x35 mm (dla dowolnej grubości materiału)</li>
+<li>Wycięcie prostokątne z dod. obróbką cięcia frez. - 100x100 mm (dod. obróbka jest możliwa na materiale o grubości do 19 mm (włącznie))</li>
+<li>Koło R - 10 mm (dla grubości do 19 mm włącznie)</li>
+<li>Koło R - 17,5 mm (dla dowolnej grubości materiału)</li>
+<li><b>Minimalne rozmiary wcięć dla wycięć:</b></li>
+<li>Wycięcie prostokątne o rozmiarze do 500 mm - wcięcia od krawędzi części 80x80x20x20 mm (wcięcia 80 muszą być równoległe do siebie)</li>
+<li>Wycięcie prostokątne o rozmiarze od 501 mm - wcięcia od krawędzi części 80x80x80x80 mm</li>
+<li><b>Wcięcia między oknami a wycięciami - 80 mm (jeśli okno lub wycięcie o rozmiarze od 501 mm)</b><br>
+      <b>Wcięcia między oknami a wycięciami - 50 mm (jeśli okno lub wycięcie o rozmiarze do 500 mm)</b><br> </li>
+<li><b>Łuk</b></li>
+<li>Minimalna reszta korpusu w środku "łuku wewnętrznego" 80 mm</li>
+<li>Minimalna część do wcięcia zerowego przy "łuku zewnętrznym" 350x160 mm</li>
+<li><b>Wycięcie prostokątne (z resztą korpusu wzdłuż konturu 3 mm):</b></li>
+<li>Minimalny rozmiar wycięcia - 100x100 mm</li>
+<li>Minimalny promień wewnętrzny - 10</li>
+<li>Przesunięcie do początku wycięć i pomiędzy nimi - 6 mm</li>
+<li>Reszta korpusu - 3 mm (frez przechodzi wzdłuż konturu samego wycięcia, a nie wzdłuż całej płaszczyzny)</li>
+<li>W przypadku korzystania z tego wycięcia oklejanie krawędzi nie jest dostępne</li>
+<li>Do wycięć okien wzdłuż konturu zostanie użyte wejście i wyjście frezem o średnicy 20.</li>
+</ol>
+<p>Wycięcie to wymaga dalszego dokończenia (wybierz resztę korpusu materiału równą 3mm), które klient wykonuje samodzielnie.</p>
+</blockquote>
+<h3 id="w-tym-rozdziale-ograniczenia-minmax-podane-sa-w-wymiarach-piowania">W tym rozdziale ograniczenia min/max podane są w wymiarach PIŁOWANIA!</h3>
+<p><a href="/service/doc/?cid=dsp">Do spisu treści</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Повернутись нагору
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0456\u0439\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u0421\u043a\u043e\u043f\u0456\u044e\u0432\u0430\u0442\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0429\u0435 1 \u0437\u0431\u0456\u0433 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.more.other": "\u0429\u0435 # \u0437\u0431\u0456\u0433\u0456\u0432 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.none": "\u0417\u0431\u0456\u0433\u0456\u0432 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0437\u0431\u0456\u0433", "search.result.other": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e # \u0437\u0431\u0456\u0433\u0456\u0432", "search.result.placeholder": "\u0420\u043e\u0437\u043f\u043e\u0447\u043d\u0456\u0442\u044c \u043f\u0438\u0441\u0430\u0442\u0438 \u0434\u043b\u044f \u043f\u043e\u0448\u0443\u043a\u0443", "search.result.term.missing": "\u041d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e \u0437\u0430\u043f\u0438\u0442\u0443", "select.version": "\u041e\u0431\u0440\u0430\u0442\u0438 \u0432\u0435\u0440\u0441\u0456\u044e"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
