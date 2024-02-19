@@ -1,8 +1,8 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -21,6 +21,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: |
-          echo "viyar-docs.viyar.tech" > viyar-docs/CNAME
-          mkdocs gh-deploy --force
-  
+          mkdocs build --clean  # Сначала соберите сайт
+          echo "viyar-docs.viyar.tech" > site/CNAME  # Теперь создайте файл CNAME в сгенерированной директории site
+      - run: mkdocs gh-deploy --force  # Выполните деплой
