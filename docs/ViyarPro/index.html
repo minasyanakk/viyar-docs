@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+<body>
+    <script>
+        location = 'index.php?s=' + location.hash.slice(1).replace(/([A-Z])/g, '-$&').toLowerCase();
+    </script>
+</body>
+
+</html>
