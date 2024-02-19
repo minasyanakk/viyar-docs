@@ -21,6 +21,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: |
-          echo "viyar-docs.viyar.tech" > site/CNAME
+          echo "viyar-docs.viyar.tech" > CNAME
           mkdocs gh-deploy --force
   
