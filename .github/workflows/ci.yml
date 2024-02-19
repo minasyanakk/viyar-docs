@@ -22,5 +22,5 @@ jobs:
       - run: pip install pillow cairosvg
       - run: |
           mkdocs build --clean  # Сначала соберите сайт
-          echo "viyar-docs.viyar.tech" > site/CNAME  # Теперь создайте файл CNAME в сгенерированной директории site
+          echo "viyar-docs.viyar.tech" > CNAME  # Теперь создайте файл CNAME в сгенерированной директории site
       - run: mkdocs gh-deploy --force  # Выполните деплой
